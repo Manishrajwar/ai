@@ -1,0 +1,37 @@
+.custom-select-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .custom-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 35px;
+    padding: 8px;
+    border: 1px solid #000;
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+    color: #333;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 140%; 
+  }
+  
+  .custom-arrow-container {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  .custom-arrow {
+    fill: #333;
+    width: 20px;
+    height: 20px;
+  }
+  

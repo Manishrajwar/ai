@@ -1,0 +1,41 @@
+
+
+.headerWrapper{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFCF96;
+    height: 69px;
+}
+
+.HeaderContainer{
+    display: flex;
+    max-width: 1650px;
+    padding:0px 80px 0px 120px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+.HeaderContainer button{
+    display: flex;
+    height: 40px;
+    padding: 8px 20px;
+    justify-content: center;
+    border-radius: 20px;
+background: #FF8080;
+/* transform: translateX(25px); */
+    align-items: center;
+    gap: 8px;
+}
+.HeaderContainer button span{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    width: 84px;
+    font-weight: 500;
+    line-height: 140%; 
+}
+

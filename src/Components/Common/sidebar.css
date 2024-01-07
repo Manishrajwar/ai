@@ -1,0 +1,76 @@
+.sidbarWrap{
+    display: flex;
+padding: 62px 6px 0px 34px;
+flex-direction: column;
+align-items: center;
+background: #333;
+width: 23.5%;
+min-height: calc(100vh - 69px);
+height: auto;
+}
+
+.sideContain{
+    width: 310px;
+color: white;
+display: flex;
+flex-direction: column;
+gap: 65px;
+
+}
+
+.profile{
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    justify-content: end;
+}
+.profile .indentity{
+   width: 206px;
+   height: 50px;
+   display: flex;
+   gap: 5px;
+   flex-direction: column;
+}
+.profile .indentity .name{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; 
+}
+.profile .indentity .userId{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    opacity: 90%;
+    line-height: 140%;
+}
+
+.sideContain .navItems{
+    width: 206px;
+    height: 291px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 0px 0px 0px 59px;
+}
+
+.sideContain .navItems .item{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: 140%; 
+}
+
+.sideContain .navItems .active{
+  
+    font-weight: 700;
+    text-decoration-line: underline;
+    text-underline-offset: 4px; 
+
+}

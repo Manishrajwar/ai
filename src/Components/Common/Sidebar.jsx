@@ -2,9 +2,11 @@ import "./sidebar.css";
 import profile from "../../assets/profile.png";
 import { sideBarItems } from "../../Data/sidebar";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function SideBar() {
 
+  const navigate = useNavigate();
     const [currentPath , setCurrentPath] = useState("");
 
     useEffect(() => {
@@ -36,7 +38,7 @@ function SideBar() {
           
           {
             sideBarItems.map((item ,index)=>(
-                <p className={`item cursor-pointer ${currentPath === item.path && 'active'}`} key={index}>{item.title} </p>
+                <p onClick={()=>navigate(item.path)} className={`item cursor-pointer ${currentPath === item.path && 'active'}`} key={index}>{item.title} </p>
             ))
           }
         </div>

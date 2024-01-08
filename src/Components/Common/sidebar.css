@@ -4,9 +4,17 @@ padding: 62px 6px 0px 34px;
 flex-direction: column;
 align-items: center;
 background: #333;
-width: 23.5%;
+width: 24%;
 min-height: calc(100vh - 69px);
 height: auto;
+}
+
+@media (min-width:1550px) {
+    .sidbarWrap{
+      
+    width: 28.5%;
+   
+    }
 }
 
 .sideContain{

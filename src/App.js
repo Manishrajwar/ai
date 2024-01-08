@@ -1,8 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import  Header  from "./Components/Common/Header";
 import HomePage from "./Pages/HomePage"
 import AutomatePage from './Pages/AutomatePage';
+import AccountFeedPage from './Pages/AccountFeedPage';
 
 function App() {
   return (
@@ -15,6 +15,8 @@ function App() {
  <Route path='/' element={<HomePage />} />
 
  <Route path='/automate' element={<AutomatePage />} />
+
+ <Route path='/accountFeeds' element={<AccountFeedPage />} />
      
       </Routes>
    

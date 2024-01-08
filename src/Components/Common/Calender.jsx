@@ -4,7 +4,7 @@ import './calender.css'; // Import your CSS file
 const Calendar = ({data , width}) => {
   return (
     <div className="custom-select-container">
-      <select className={`custom-select ${width} `}>
+      <select className={`custom-select -z-20 ${width} `}>
         <option value="option1">{data}</option>
        
       </select>

@@ -59,7 +59,7 @@ function SetItSection(){
 
              <div className="titParaBox">
                 <p className="title">{data.title}</p>
-                <p className="para">{data.para}</p>
+                <p className="paraf">{data.para}</p>
              </div>
 
         </div>

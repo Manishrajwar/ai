@@ -1,5 +1,5 @@
 .sidbarWrap{
-    display: flex;
+display: flex;
 padding: 62px 6px 0px 34px;
 flex-direction: column;
 align-items: center;
@@ -7,23 +7,14 @@ background: #333;
 width: 24%;
 min-height: calc(100vh - 69px);
 height: auto;
+overflow: hidden;
 }
-
-@media (min-width:1550px) {
-    .sidbarWrap{
-      
-    width: 28.5%;
-   
-    }
-}
-
 .sideContain{
     width: 310px;
 color: white;
 display: flex;
 flex-direction: column;
 gap: 65px;
-
 }
 
 .profile{
@@ -76,9 +67,50 @@ gap: 65px;
 }
 
 .sideContain .navItems .active{
-  
     font-weight: 700;
     text-decoration-line: underline;
     text-underline-offset: 4px; 
+}
+
+@media (min-width:1550px) {
+    .sidbarWrap{
+    width: 28.5%;
+    
+    }
+}
+
+@media (max-width:1200px) {
+    .sidbarWrap{
+      width: 300px;
+    }
+}
+
+@media (max-width:920px) {
+    .sidbarWrap{
+        display: none;
+        width: 330px;
+      height: auto;
+      overflow: hidden;
+}
+
+.active2{
+    display: block;
+    animation-name: showSidebar;
+    animation-duration: 0.4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+position: absolute;
+height: 100%;
+z-index: 100;
+}
+
+@keyframes showSidebar {
+    0%{
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
 
 }

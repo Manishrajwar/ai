@@ -1,11 +1,16 @@
+import { useContext } from "react";
 import Calendar from "../Components/Common/Calender";
 import Header from "../Components/Common/Header";
 import SideBar from "../Components/Common/Sidebar";
 import "./page.css"
+import { AppContext } from "../Context/AppContext";
 
 function AutomatePage(){
+
+ const {showSidebar} = useContext(AppContext);
+
     return(
-        <div className="autoMateWrap">
+        <div className="autoMateWrap overflow-hidden">
 
             <Header showBtn={false} />
 
@@ -15,10 +20,10 @@ function AutomatePage(){
               <SideBar />
 
                 {/* right side  */}
-                <div className="rightContainer">
+                <div className={`auRightContainer ${showSidebar && "addBg"}`}>
 
                 
-                <div className="auto_page_content">
+                <div className={`auto_page_content`}>
 
                <div className="auto_head">
                 <p>AUTOMATE</p>
@@ -38,10 +43,12 @@ function AutomatePage(){
                     {/* first box */}
                     <div className="boxCol1">
                         <p className="title ">Commencing</p>
+                         <div className="dateNow">
 
-                 <input type="date" className="dateBox" />
+                 <input type="date" className="dateBox " />
 
                  <p className="nowText">Now</p>
+                         </div>
                     </div>
 
                   {/* second box  */}
@@ -56,35 +63,46 @@ function AutomatePage(){
                   </div>
 
               {/* thirrd */}
-                  <div className="boxCol2">
-                    <p className="textCom w-[243px]">Duration between each tweet:</p>
+                  <div className="boxCol3">
+                    <p className="textCom pr-2 sm:w-[243px]">Duration between each tweet:</p>
+
+                       <div className="timeDate1">
 
                     <Calendar data={'3'} width={'w-[66px]'} />
                     <Calendar data={'days'} width={'w-[96px]'} />
 
+                       </div>
 
                   </div>
 
                   {/* forth */}
-                  <div className="boxCol2">
+                  <div className="boxCol4">
                     <p className="textCom w-[206px]">Random variance of schedule: </p>
+
+                    <div className="timeDate1">
+
                     <p className="sign">+/-</p>
 
                     <Calendar data={'6'} width={'w-[66px]'} />
                     <Calendar data={'hours'} width={'w-[96px]'} />
 
+                    </div>
 
                   </div>
 
                   {/* fivth */}
-                  <div className="boxCol2">
+                  <div className="boxCol5">
                     <p className="textCom w-[151px]" >System will give you</p>
+
+                    <div className="timeDate2">
+
 
                     <Calendar data={'6'} width={'w-[66px]'} />
                     <Calendar data={'hours'} width={'w-[96px]'} />
 
                     <span className="textCom">notice before first tweet is posted</span>
 
+                    </div>
 
                   </div>
 

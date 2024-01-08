@@ -1,10 +1,13 @@
 import "./sidebar.css";
 import profile from "../../assets/profile.png";
 import { sideBarItems } from "../../Data/sidebar";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { AppContext } from "../../Context/AppContext";
 
 function SideBar() {
+
+  const {showSidebar , setShowSidebar} = useContext(AppContext);
 
   const navigate = useNavigate();
     const [currentPath , setCurrentPath] = useState("");
@@ -16,9 +19,44 @@ function SideBar() {
       
       }, []);
 
+      const [windowSize, setWindowSize] = useState({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    
+      const handleResize = () => {
+        setWindowSize({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        });
+      };
+    
+      useEffect(() => {
+        setWindowSize({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        });
+    
+        // Add event listener to track window size changes
+        window.addEventListener('resize', handleResize);
+    
+        // Remove event listener on component unmount
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }, []);
+
+
+       useEffect(()=>{
+
+         if(windowSize.width > 920){
+  setShowSidebar(false);
+         }
+       },[windowSize.width])
+
       
   return (
-    <div className="sidbarWrap">
+    <div className={`sidbarWrap ${showSidebar&&('active2')}`}>
       <div className="sideContain">
         {/* top box profile */}
         <div className="profile">

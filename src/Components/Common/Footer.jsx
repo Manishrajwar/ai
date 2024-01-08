@@ -17,7 +17,7 @@ function Footer(){
 
                
                 {/* second  */}
-                <div className="w-[180px]">
+                <div className="lg:w-[180px]">
                   
                 </div>
 

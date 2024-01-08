@@ -82,30 +82,6 @@ align-items: center;
 gap: 16px;
 }
 
-@media (max-width:1250px) {
-    .hoPaWrap{
-    padding: 64px 60px 104px 60px;
-    gap: 40px;
-   
-    }
-}
-
-@media (max-width:1000px) {
-    .hoPa_content h2{
-       
-    font-size: 36px;
-    
-   
-    }
-    .hoPa_content .para{
-       
-       max-width: 570px;
-       font-size: 16px;
-        
-    }
-
-
-}
 
 /* set IT css */
 .setItWrap{
@@ -165,6 +141,8 @@ display: flex;
 flex-direction: column;
 align-items: center;
 }
+
+
  .singleBox .imgBox{
      display: flex;
      justify-content: center;
@@ -178,8 +156,8 @@ align-items: center;
     padding: 24px;
     flex-direction: column;
     align-items: center;
-    align-self: stretch;
     background: #CDFAD5;
+    width: 100%;
     
 }
  .singleBox .titParaBox .title{
@@ -189,9 +167,9 @@ align-items: center;
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
-    line-height: 150%; /* 36px */
+    line-height: 150%;
 }
- .singleBox .titParaBox .para{
+ .singleBox .titParaBox .paraf{
     color: #000;
 text-align: center;
 font-family: Inter;
@@ -199,7 +177,10 @@ font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 150%; 
+width: 100%;
 }
+
+
 
 
 
@@ -220,7 +201,6 @@ width: 100%;
 padding: 24px;
 flex-direction: column;
 gap: 13px;
-
 align-items: flex-start;
 background: #F8F8F8;
 }
@@ -233,6 +213,7 @@ background: #F8F8F8;
     font-weight: 700;
     line-height: 120%;
 }
+
 
 .recItemBox{
     display: flex;
@@ -304,7 +285,7 @@ align-items: center;
 gap: 48px;
 align-self: stretch;
 width: 100%;
-
+flex-wrap: wrap;
 
 }
 .trustWap .logoContainer .img1{
@@ -313,3 +294,86 @@ aspect-ratio: 9/2;
 object-fit: contain;
 
 }
+
+@media (max-width:1250px) {
+    .hoPaWrap{
+    padding: 64px 60px 104px 60px;
+    gap: 40px;
+   
+    }
+}
+
+@media (max-width:1000px) {
+    .hoPa_content{
+        display: flex;
+    flex-direction: column;
+    }
+    
+    .hoPa_content h2{    
+    font-size: 36px;   
+    }
+    .hoPa_content .para{   
+       max-width: 570px;
+       font-size: 16px;     
+    }
+    .setITBOXES{  
+    gap: 20px;
+    }
+}
+
+@media (max-width:700px) {
+    .hoPaWrap{
+         display: flex;
+         flex-direction: column-reverse;
+    padding: 64px 20px 104px 20px;
+  
+    }
+    .reckonContain{
+      
+    padding: 24px 20px;
+   
+    }
+    .setItWrap{
+        padding: 64px 20px;
+    
+    }
+    .setITBOXES{
+        display: flex;
+  flex-direction: column;
+  align-items: center;
+    }
+}
+
+@media (max-width:600px) {
+    .setITContain .head_para p{
+        width: 98%;  
+    }
+    
+}
+@media (max-width:550px) {
+    .hoPa_img{
+        width: 95%;
+    }   
+}
+@media (max-width:500px) {
+    .reckonContain .heading{
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width:400px) {
+    .trustWap .logoContainer{
+     display: flex;
+     flex-direction: column;
+    
+    }
+    
+    .singleBox{
+        width: 98%;
+    }
+    
+}
+
+
+

@@ -14,7 +14,7 @@ function AutomatePage(){
 
             <Header showBtn={false} />
 
-             <div className="autmaContain">
+             <div className="autmaContain overflow-hidden">
 
                 {/* left side */}
               <SideBar />

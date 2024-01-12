@@ -7,7 +7,7 @@ function HeroSection(){
         <div className="hoPaWrap">
 
         {/* left part  */}
-        <div className="hoPa_content">
+        <div className="hoPa_content ">
 
             <h2>Automated AI- <br />Crafted Tweets</h2>
 
@@ -16,7 +16,7 @@ function HeroSection(){
             <div className=" btnTextWrap">
 
 
-            <button className="tryBtn"><span>TRY FOR FREE</span></button>
+            <button className="tryBtn">TRY FOR FREE</button>
 
             <p className="noCreditText mt-1">No credit card required</p>
 

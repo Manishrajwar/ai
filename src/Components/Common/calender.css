@@ -1,3 +1,6 @@
+
+/* this css is good for accountManagement show all dropdown check for that if it get change in future */
+
 .custom-select-container {
     position: relative;
     display: inline-block;
@@ -7,18 +10,16 @@
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    height: 35px;
-    padding: 8px;
     border: 1px solid #000;
     outline: none;
     cursor: pointer;
-    background-color: white;
-    color: #333;
+    padding: 0px 0px 0px 22px;
+    color: #000;
 font-family: Inter;
-font-size: 14px;
+font-size: 18px;
 font-style: normal;
-font-weight: 500;
-line-height: 140%; 
+font-weight: 400;
+line-height: 150%; 
   }
   
   .custom-arrow-container {
@@ -32,6 +33,6 @@ line-height: 140%;
   .custom-arrow {
     fill: #333;
     width: 20px;
-    height: 20px;
+    height: 14px;
   }
   

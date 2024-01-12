@@ -1,0 +1,342 @@
+.accManaWrap{
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.accManaContain{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    margin: 64px auto;
+}
+
+
+.accManaHead{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.accManaHead .head_title{
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; 
+}
+.accManaHead .subHead{
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+}
+
+
+.accManaShow{
+    width: 608px;
+height: 61px;
+display: flex;
+gap: 35px;
+align-items: center;
+/* justify-content: center; */
+/* background-color: red; */
+margin: 0 auto;
+}
+
+
+.accManaShow .showAll{
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+.accManaShow .showAll p{
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+}
+
+
+.accManaShow .search{
+    display: inline-flex;
+    padding: 3px 41px 3px 29px;
+    align-items: center;
+    border-radius: 20px;
+border: 1px solid #000;
+width: 260px;
+height: 40px;
+overflow: hidden;
+}
+.accManaShow .search input{
+    width: 190px;
+    height: 34px;
+   outline: none;
+   border: none;
+   font-family: Inter;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 150%; 
+}
+.accManaShow .search input::placeholder{
+    color: #979797;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+}
+
+.accManaData{
+    display: flex;
+padding: 0px 40px;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+width: 1000px;
+margin: 0 auto;
+}
+
+
+
+.accManaData .tableHeading{
+width: 100%;
+display: flex;
+padding: 0px 40px;
+flex-direction: column;
+align-items: center;
+}
+.accManaData .tableHeading tr{
+    display: flex;
+    width: 913px;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.singleRow{
+    width: 242px;
+    display: flex;    
+    justify-content: start;
+}
+.singleRow2{
+    width: 242px;
+    display: flex;
+    justify-content: start;
+}
+
+.secondRow{
+    width: 219px;
+flex-shrink: 0;
+align-self: stretch;
+display: flex;
+justify-content: end;
+}
+
+.thirdRow{
+    width: 77px;
+flex-shrink: 0;
+align-self: stretch;
+display: flex;
+justify-content: end;
+}
+
+.textDeco{
+    color: #000;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%; 
+text-decoration-line: underline;
+}
+
+.headAns{
+    display: flex;
+width: 920px;
+padding: 10px;
+align-items: center;
+margin: 0 auto;
+gap: 10px;
+}
+.singleTh{
+    width: 242px;
+color: #000;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; 
+display: flex;
+justify-content: start;
+}
+.singleTh2{
+    width: 420px;
+color: #000;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+display: flex;
+justify-content: start;
+}
+
+.singleTh3{
+    width: 80px;
+}
+
+.textDeco2{
+    color: #000;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 27px */
+
+}
+
+
+.singleTh5{
+    width: 57px;
+    height: 27px;
+    margin: 0px 0px 10px 40px;
+    display: flex;
+    justify-content: center;
+}
+.singleTh5 p{
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+}
+.singleTh3 input{
+    width: 19px;
+    height: 19px;
+}
+.singleTh4 input{
+    width: 19px;
+    height: 19px;
+}
+
+@media (max-width:1200px) {
+    .accManaContain{
+        width: 100%;
+    }
+}
+
+@media (max-width:1020px) {
+    .accManaData{
+        width: 98%;
+    }
+}
+
+@media (max-width:950px) {
+    .accManaData{
+      padding: 0px 10px;
+    }
+    
+    .accManaData .tableHeading{
+        padding: 0px 0px;
+        }
+
+    .accManaData .tableHeading tr{
+       width: 100%;
+       background-color: blue;
+       padding: 10px 5px;
+       gap: 10px;
+       justify-content: space-between;
+    }
+
+    .singleRow{
+ width: fit-content;
+         background-color: beige;
+      
+    }
+    .singleRow2{
+       width: fit-content;
+       background-color: lightgreen;
+    }
+    .secondRow{
+        width: fit-content;
+    flex-shrink: 0;
+    align-self: stretch;
+    display: flex;
+    justify-content: end;
+    background-color: aquamarine;
+    }
+    
+.thirdRow{
+    width: fit-content;
+flex-shrink: 0;
+align-self: stretch;
+display: flex;
+justify-content: end;
+}
+
+    
+}
+@media (max-width:620px) {
+    .accManaShow{
+        width: 97%;
+        gap: 10px;
+    }
+    .accManaShow .showAll{
+        gap: 10px;
+    }
+    .accManaShow .showAll p{
+     font-size: 16px;
+    }
+
+
+    .smallWidthTable{
+        padding: 0px 0px 0px 35px;
+      
+    }
+   
+    
+}
+@media (max-width:570px) {
+    .textDeco{
+        font-size: 14px;
+    }
+    .textDeco2{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:550px) {
+    .accManaShow{
+     display: flex;
+     flex-direction: column;
+     height: fit-content;
+     padding: 10px 10px;
+    }
+    .accManaContain{
+    gap: 25px;
+    }
+    
+    
+}
+
+@media (max-width:450px) {
+    .accManaHead .head_title{
+        font-size: 24px;
+    }
+    .accManaHead .subHead{
+      font-size: 16px;
+    }
+}

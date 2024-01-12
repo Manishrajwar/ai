@@ -1,0 +1,251 @@
+.generateWrap{
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.generateContain{
+    display: flex;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.generateRight{
+    display: flex;
+    width: calc(100vw - 23.5%);
+padding: 20px 0px 20px 200px;
+
+}
+
+.geneContent{
+    display: flex;
+flex-direction: column;
+}
+.geneContent .gene_head{
+    display: flex;
+    width: 604px;
+    height: 113px;
+    flex-direction: column;
+    justify-content: center;
+}
+.geneContent .gene_head p{
+    color: #333;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 44.8px */
+}
+.geneContent .gene_Para{
+    width: 604px;
+    min-height: 49px;
+    flex-shrink: 0;
+}
+.geneContent .gene_Para p{
+    color: #333;
+text-align: center;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 140%; /* 19.6px */
+}
+.geneContent .genPara{
+    width: 604px;
+    min-height: 49px;
+    flex-shrink: 0;
+}
+
+.geneContent .genPara p{
+    color: #333;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+}
+.geneContent .genPara .accEdit{
+    color: #333;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.geneMainblock{
+    display: flex;
+width: 664px;
+height: 513px;
+padding: 10px;
+flex-direction: column;
+align-items: flex-start;
+gap: 20px;
+}
+
+
+.genBlock{
+    display: flex;
+align-items: center;
+gap: 10px;
+}
+.genBlock .genInputB{
+    display: flex;
+    padding: 10px;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px solid #000;
+}
+.genBlock .genInputB textarea{
+    width: 436px;
+    min-height: 53px;
+    height: fit-content;
+    color: #333;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 140%; 
+outline: none;
+border: none;
+resize: none;
+}
+.genBlock button{
+    display: flex;
+    padding: 10px 35px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 20px;
+background: #FF8080;
+}
+.genBlock button span{
+    color: #FFF;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 140%; 
+}
+
+.genBlock2{
+    display: flex;
+width: 459px;
+align-items: center;
+gap: 25px;
+}
+.genBlock2 .bloc2tit{
+    color: #333;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+}
+.genBlock2 .bloc2box{
+    display: flex;
+    width: 87px;
+    height: 36px;
+    overflow: hidden;
+    padding: 7px 0px 2px 10px;
+    align-items: flex-start;
+    border: 1px solid #000;
+}
+.genBlock2 .bloc2box input{
+    color: #333;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    width: 53px;
+    outline: none;
+    border: none;
+height: 25px;
+overflow: hidden;
+}
+.genBlock2 .bloc2box input::placeholder{
+    color: #333;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; 
+}
+
+
+
+  @media (max-width:1200px) {
+    .generateRight{
+        width: calc(100vw - 300px);
+         padding: 20px 0px 20px 10px;
+         display: flex;
+         justify-content: center;
+    }
+    
+}
+
+@media (max-width:970px) {
+    .generateRight{
+        width: 100%;
+        display: flex;
+        padding: 20px 0px 20px 0px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+   
+    
+}
+
+@media (max-width:675px) {
+    .geneMainblock{
+      width: 100%;
+      height: auto;
+    }
+    
+}
+
+@media (max-width:650px) {
+    
+    .geneContent .gene_head{
+    width: 100%;
+    }
+    .geneContent .gene_Para{
+        width: 98%;
+    }
+    .geneContent .genPara{
+        width: 98%;
+    }
+    
+    .genBlock{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+  
+
+}
+
+@media (max-width:500px) {
+    .genBlock{
+        width: 100%;
+        
+    }
+    .genBlock .genInputB{
+   width: 100%;
+   padding: 10px 5px;
+    }
+    .genBlock .genInputB textarea{
+       width: 95%;
+       min-height: 60px;
+    }
+}
+
+@media (max-width:320px) {
+    .genBlock2{
+       gap: 10px;
+    }
+}

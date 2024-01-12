@@ -1,0 +1,367 @@
+.adminGenWrap{
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+.adminGenContain{
+    display: flex;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.adminGenRight{
+    display: flex;
+    width: calc(100vw - 23.5%);
+padding: 20px 0px 20px 200px;
+
+}
+.adminGenContent{
+    display: flex;
+flex-direction: column;
+}
+
+.adminGenHead{
+    display: flex;
+width: 604px;
+height: 113px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+}
+.adminGenHead p{ 
+    color: #333;
+text-align: center;
+font-family: Inter;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 140%; /* 44.8px */
+}
+
+.adMaxTw{
+    display: flex;
+width: 459px;
+height: 71px;
+align-items: center;
+flex-shrink: 0;
+gap: 22px;
+}
+
+
+.adMaxTw .adtitl{
+    color: #333;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+}
+.adMaxTw .adbox{
+    display: flex;
+    width: 87px;
+    height: 35px;
+    padding: 7px 10px;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    border: 1px solid #000;
+    overflow: hidden;
+}
+.adMaxTw .adbox input{
+    width: 53px;
+    height: 25px;
+    flex-shrink: 0;
+    color: #333;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 140%; /* 19.6px */
+outline: none;
+border: none;
+}
+
+.adMaxTw2{
+    display: flex;
+width: 459px;
+height: 52px;
+align-items: center;
+flex-shrink: 0;
+gap: 23px;
+}
+
+.adMaxTw2 .adtitl{
+    color: #333;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 19.6px */
+}
+.adMaxTw2 .adbox{
+    display: flex;
+    width: 87px;
+    height: 35px;
+    padding: 7px 10px;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    border: 1px solid #000;
+    overflow: hidden;
+}
+.adMaxTw2 .adbox input{
+    width: 53px;
+    height: 25px;
+    flex-shrink: 0;
+    color: #333;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 140%; /* 19.6px */
+outline: none;
+border: none;
+}
+
+
+.adPromtGene{
+    display: flex;
+min-height: 549px;
+height: auto;
+padding: 10px 0px;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+flex-shrink: 0;
+margin-top: 50px;
+}
+.adPromtGene .title{
+    width: 604px;
+height: 30px;
+flex-shrink: 0;
+}
+.adPromtGene .title p{
+    color: #333;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 19.6px */
+}
+
+.adMainCont{
+    display: flex;
+width: 623px;
+min-height: 476px;
+padding: 3px 10px;
+align-items: flex-start;
+gap: 10px;
+flex-shrink: 0;
+}
+
+
+.adMainCont .generateText{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px solid #000;
+background: #CDFAD5;
+width: 460px;
+height: 476px;
+}
+
+
+
+
+.adMainCont .generateText textarea{
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  color: #333;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; 
+border: none;
+outline: none;
+resize: none;
+}
+
+.adMainCont .updateBtn{
+    display: flex;
+padding: 10px 35px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 20px;
+background: #FF8080;
+overflow: hidden;
+width: 126px;
+}
+.adMainCont .updateBtn span{
+    color: #FFF;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 140%; 
+}
+
+
+.promptReply{
+    display: flex;
+    padding: 10px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+
+.promptReply .title{
+    width: 604px;
+    height: 20px;
+    flex-shrink: 0;
+    color: #333;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 140%; 
+}
+
+
+.replyContent{
+    display: flex;
+width: 623px;
+min-height: 317px;
+padding: 3px 10px;
+align-items: flex-start;
+gap: 10px;
+flex-shrink: 0;
+}
+.replyContent .replygeneText{
+    display: flex;
+    padding: 10px;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px solid #000;
+    width: 460px;
+background: #CDFAD5;
+height: 100%;
+}
+.replyContent .replygeneText textarea{
+   width: 100%;
+   height: 100%;
+    flex-shrink: 0;
+    color: #333;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 19.6px */
+background-color: transparent;
+resize: none;
+outline: none;
+border: none;
+}
+.replyContent .updateBtn{
+    display: flex;
+    padding: 10px 35px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 20px;
+background: #FF8080;
+overflow: hidden;
+}
+.replyContent .updateBtn span{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 19.6px */
+}
+
+  @media (max-width:1200px) {
+    .adminGenRight{
+        width: calc(100vw - 300px);
+         padding: 20px 0px 20px 10px;
+         display: flex;
+         justify-content: center;
+    }
+    
+}
+@media (max-width:970px) {
+    .adminGenRight{
+        width: 100%;
+        display: flex;
+        padding: 20px 0px 20px 0px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+   
+    
+}
+
+@media (max-width:640px) {
+    .adminGenHead{
+       width: 98%;
+       margin: 0 auto;
+    }
+
+    .promptReply .title , .adPromtGene .title{
+        padding: 0px 10px;
+    }
+
+    .adMaxTw , .adMaxTw2{
+        padding: 0px 5px;
+    }
+
+    .adMainCont{
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .adMainCont .updateBtn{
+      margin: 0 auto;
+    }
+
+    .replyContent{
+        display: flex;
+    width: fit-content;
+    flex-direction: column;
+  
+    }
+    .replyContent .updateBtn{
+      margin: 0 auto;
+    }
+}
+
+
+@media (max-width:500px) {
+    .adMaxTw , .adMaxTw2{
+        width: 100%;
+    }  
+    .adMainCont{
+        width: 100%;
+    }
+    .adMainCont .generateText{
+        width: 98%;
+    }
+
+    .replyContent{
+       width: 100%;
+    }
+    .replyContent .replygeneText{
+      width: 98%;
+    }
+
+}

@@ -6,11 +6,14 @@ export const AppContext = createContext();
 export default function AppContextProvider({ children }) {
 
   const [showSidebar , setShowSidebar] = useState(false);
-
+  
+ const [showschedulePostPopup , setShowSchedulePopup] = useState(false);
   
   const value = {
     showSidebar ,
-     setShowSidebar
+     setShowSidebar , 
+     showschedulePostPopup , 
+     setShowSchedulePopup
   
   };
 

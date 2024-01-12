@@ -1,0 +1,237 @@
+.schPoWrap{
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.schePoContain{
+    display: flex;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.scherightContain{
+    display: flex;
+    width: calc(100vw - 23.5%);
+padding: 20px 0px 20px 200px;
+position: relative;
+}
+
+.shcPoContent{
+    display: flex;
+flex-direction: column;
+z-index: 10;
+}
+.shcPoContent .shc_head{
+    display: flex;
+    width: 604px;
+    height: 113px;
+    flex-direction: column;
+    justify-content: center;
+}
+.shcPoContent .shc_head p{
+    color: #333;
+text-align: center;
+font-family: Inter;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 140%; /* 44.8px */
+}
+.shcPoContent .sch_Para{
+    width: 604px;
+    min-height: 49px;
+    flex-shrink: 0;
+}
+.shcPoContent .sch_Para p{
+    color: #333;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 19.6px */
+}
+.shcPoContent .sch_Para2{
+    width: 604px;
+    min-height: 49px;
+    flex-shrink: 0;
+}
+
+.shcPoContent .sch_Para2 p{
+    color: #333;
+    text-align: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+}
+.shcPoContent .sch_Para2 .accEdit{
+    color: #333;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.shcManBlock{
+    display: flex;
+    width: 664px;
+    height: 513px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+
+.singleTw{
+    display: flex;
+overflow: hidden;
+height: 35px;
+padding: 10px;
+align-items: center;
+gap: 15px;
+flex-shrink: 0;
+}
+
+
+.AddEvenTw{
+    background:#CDFAD5;
+}
+
+.singleTw .twDate{
+
+    width: 155px;
+height: 20px;
+overflow: hidden;
+flex-shrink: 0;
+    color: #333;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 19.6px */
+}
+
+.singleTw .twTitl{
+    width: 415px;
+    min-height: 20px;
+    height: auto;
+    text-align: center;
+    flex-shrink: 0;
+    color: #333;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 140%; /* 19.6px */
+overflow: hidden;
+}
+
+.ScpopupLayer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(51, 51, 51, 0.69);
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+
+}
+
+
+  @media (max-width:1200px) {
+    .scherightContain{
+        width: calc(100vw - 300px);
+         padding: 20px 0px 20px 10px;
+         display: flex;
+         justify-content: center;
+    }
+    
+}
+
+@media (max-width:985px) {
+    .singleTw{
+    padding: 5px;
+ gap: 0px;
+    }
+    
+}
+@media (max-width:970px) {
+    .scherightContain{
+        width: 100%;
+        display: flex;
+        padding: 20px 0px 20px 0px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+   
+    
+}
+
+@media (max-width:670px) {
+    .singleTw{
+        padding: 5px;
+     gap: 15px;
+        }
+    .shcManBlock{
+        width: 100%;
+    }
+
+    .singleTw .twDate{
+        width: fit-content;
+    }
+     .singleTw .twTitl{
+        width: fit-content;
+     }
+}
+
+
+@media (max-width:650px) {
+    
+    
+    .shcPoContent .shc_head{
+    width: 100%;
+    }
+    .shcPoContent .sch_Para{
+        width: 98%;
+    }
+    .shcPoContent .sch_Para2{
+        width: 98%;
+    }
+   .singleTw{
+    width: 100%;
+   }
+    .singleTw .twDate{
+font-size: 12px;
+    }
+      
+    .singleTw .twTitl{
+        font-size: 12px;
+    }
+    .shcManBlock{
+      align-items: center;
+    }
+
+}
+
+@media (max-width:550px) {
+    .singleTw{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+@media (max-width:350px) {
+    .shcPoContent .shc_head p{
+        font-size: 26px;
+    }
+}

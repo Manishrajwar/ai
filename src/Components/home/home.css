@@ -1,7 +1,7 @@
 /* hero section  css  */
 .hoPaWrap{
     display: flex;
-padding: 64px 120px 104px 120px;
+padding: 64px 135px 104px 120px;
 justify-content: center;
 gap: 80px;
 justify-content: space-between;
@@ -16,12 +16,14 @@ margin: 0 auto;
 flex-direction: column;
 align-items: flex-start;
 gap: 24px;
+overflow: hidden;
 max-width: 560px;
 }
 
 .hoPa_content h2{
     color: #000;
 font-family: Inter;
+overflow: hidden;
 font-size: 56px;
 font-style: normal;
 font-weight: 700;
@@ -38,14 +40,19 @@ line-height: 120%;
 }
 .hoPa_content button{
     display: flex;
-    height: 40px;
     overflow: hidden;
-    padding: 12px 24px;
+    padding: 1em 2em;
+    width: 132px;
     justify-content: center;
     align-items: center;
-    gap: 8px;
     border-radius: 20px;
     background: #FF8080;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; 
     
 }
 .hoPa_content button span{
@@ -62,6 +69,7 @@ line-height: 140%;
     width: 520px;
     display: flex;
     justify-content: center;
+    /* background-color: red; */
 
 }
 
@@ -180,10 +188,6 @@ line-height: 150%;
 width: 100%;
 }
 
-
-
-
-
 /* user reckon css */
 
 .userRecWrap{
@@ -196,14 +200,15 @@ align-self: stretch;
 
 .reckonContain{
     display: flex;
-max-width: 1200px;
-width: 100%;
-padding: 24px;
-flex-direction: column;
-gap: 13px;
-align-items: flex-start;
-background: #F8F8F8;
+    max-width: 1200px;
+    width: 100%;
+    padding: 24px;
+    flex-direction: column;
+    gap: 13px;
+    align-items: flex-start;
+    background: #F8F8F8;
 }
+
 
 .reckonContain .heading{
     color: #FF8080;
@@ -236,6 +241,9 @@ margin: 0 auto;
     flex-wrap: wrap;
 }
 
+.margintop{
+    margin-top: 18px;
+}
 
 .recItemBox .singleItem{
     display: flex;
@@ -252,9 +260,8 @@ background: #333;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 140%; /* 22.4px */
+    line-height: 140%; 
 }
-
 
 /* trust wrap css */
 .trustWap{
@@ -292,33 +299,75 @@ flex-wrap: wrap;
 width: 154px;
 aspect-ratio: 9/2;
 object-fit: contain;
-
 }
+
 
 @media (max-width:1250px) {
     .hoPaWrap{
-    padding: 64px 60px 104px 60px;
-    gap: 40px;
+
+    padding: 64px 110px 104px 80px;
+    gap: 20px;
    
     }
 }
 
-@media (max-width:1000px) {
-    .hoPa_content{
-        display: flex;
-    flex-direction: column;
+@media (max-width:1140px) {
+    .recItemBox .singleItem span{
+      font-size: 14px;
     }
-    
-    .hoPa_content h2{    
-    font-size: 36px;   
-    }
-    .hoPa_content .para{   
-       max-width: 570px;
-       font-size: 16px;     
-    }
-    .setITBOXES{  
+    .hoPaWrap{
+    padding: 64px 70px 104px 50px;
     gap: 20px;
     }
+
+}
+
+@media (max-width:1040px) {
+    .recItemBox .singleItem span{
+        font-size: 13px;
+      }
+}
+@media (max-width:1024px) {
+    .userRecWrap{
+        padding: 0px 0px;
+    }
+    .reckonContain{
+        padding: 88px 20px ;
+    }
+     
+    .hoPa_content h2{    
+        font-size: 36px;   
+        }
+        .hoPa_content .para{   
+           max-width: 570px;
+           font-size: 16px;     
+        }
+        .setITBOXES{  
+        gap: 20px;
+        }
+
+}
+
+@media (max-width:950px) {
+    .recItemBox .itemCol{
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+    }
+    .recItemBox .singleItem{
+       height: 50px;
+       overflow: hidden;
+    }
+    .recItemBox .itemCol{
+padding: 2px; 
+   }
+    
+}
+
+@media (max-width:780px) {
+    .hoPaWrap{
+        padding: 64px 40px 104px 40px;
+        
+        }
 }
 
 @media (max-width:700px) {
@@ -326,13 +375,13 @@ object-fit: contain;
          display: flex;
          flex-direction: column-reverse;
     padding: 64px 20px 104px 20px;
+    gap: 30px;
   
     }
-    .reckonContain{
-      
-    padding: 24px 20px;
-   
+    .hoPa_content{
+      max-width: 427px;
     }
+   
     .setItWrap{
         padding: 64px 20px;
     
@@ -350,6 +399,28 @@ object-fit: contain;
     }
     
 }
+@media (max-width:555px) {
+    .recItemBox .itemCol{
+        display: flex;
+        flex-direction: column;
+      
+     }
+     .recItemBox{
+       padding: 2px;
+    }
+    .recItemBox .singleItem{
+width: 95%;
+    } 
+    .recItemBox{
+      gap: 0;
+    }
+
+    .margintop{
+        margin-top: 0px;
+    }
+  
+}
+
 @media (max-width:550px) {
     .hoPa_img{
         width: 95%;
@@ -359,8 +430,19 @@ object-fit: contain;
     .reckonContain .heading{
         font-size: 24px;
     }
+    .hoPa_content{
+    
+    width: 95%;
+   
+    }
+    
 }
-
+@media (max-width:450px) {
+    .recItemBox .singleItem span{
+       font-size: 14px;
+    }
+    
+}
 
 @media (max-width:400px) {
     .trustWap .logoContainer{

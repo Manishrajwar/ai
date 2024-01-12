@@ -1,0 +1,156 @@
+.loginWrap{
+    width: 100vw;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.loginContain{
+    display: flex;
+width: 1200px;
+flex-direction: column;
+align-items: center;
+gap: 40px;
+margin: 64px auto;
+padding-bottom: 5px;
+
+}
+
+
+
+.log_head{
+    color: #000;
+text-align: center;
+font-family: Inter;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; 
+}
+
+.log_HP{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 0px 5px;
+}
+
+
+.loginContain form{
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 16px;
+align-self: stretch;
+padding: 0px 10px;
+}
+
+form .logemailCon{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+form .logemailCon label{
+    color: #000;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; 
+}
+
+form .logemailCon input{
+    display: flex;
+height: 42px;
+padding: 12px;
+align-items: center;
+gap: 8px;
+align-self: stretch;
+border: 1px solid #000;
+background: #FFF;
+width: 500px;
+}
+form .logemailCon input::placeholder{
+    color: #979797;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; 
+}
+
+
+.loginContain .loginBtn{
+    display: flex;
+height: 40px;
+padding: 12px 24px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+align-self: stretch;
+border-radius: 20px;
+background: #FF8080;
+width: 500px;
+overflow: hidden;
+margin: 0 auto;
+}
+
+.loginContain .loginBtn span{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; 
+}
+
+.forPassLogin{
+    width: 500px;
+    height: 27px;
+
+}
+.forPassLogin p{
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+
+}
+
+@media (max-width:1200px) {
+    .loginContain{
+    width: 100%;
+    }
+}
+
+@media (max-width:530px) {
+    form .logemailCon{
+        width: 100%;
+    
+    }
+    .forPassLogin{
+       width: 97%;
+    
+    }
+    
+    form .logemailCon label{
+      margin: 0px 5px;
+    }
+    
+    form .logemailCon input{
+        width: 97%;
+       
+        margin: 0px 5px;
+    }
+    .loginContain .loginBtn{
+       
+    width: 97%;
+  
+    }
+    
+}
+
+

@@ -4,17 +4,28 @@ padding: 62px 6px 0px 34px;
 flex-direction: column;
 align-items: center;
 background: #333;
-width: 24%;
-min-height: calc(100vh - 69px);
+width: 380px;
+min-height: 100vh;
 height: auto;
 overflow: hidden;
 }
 .sideContain{
     width: 310px;
+    background-color: beige;
 color: white;
 display: flex;
 flex-direction: column;
 gap: 65px;
+}
+
+@media (max-width:550px) {
+    .sidbarWrap{
+        padding: 62px 0px 0px 0px;
+    }
+
+    .sideContain{
+        width: 100%;
+    }
 }
 
 .profile{
@@ -22,6 +33,7 @@ gap: 65px;
     gap: 9px;
     align-items: center;
     justify-content: end;
+    background-color: red;
 }
 .profile .indentity{
    width: 206px;
@@ -51,10 +63,11 @@ gap: 65px;
 .sideContain .navItems{
     width: 206px;
     height: 291px;
+    background-color: aqua;
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin: 0px 0px 0px 59px;
+    /* margin: 0px 0px 0px 59px; */
 }
 
 .sideContain .navItems .item{
@@ -64,12 +77,39 @@ gap: 65px;
     font-style: normal;
     font-weight: 350;
     line-height: 140%; 
+    cursor: pointer;
 }
 
 .sideContain .navItems .active{
     font-weight: 700;
     text-decoration-line: underline;
     text-underline-offset: 4px; 
+}
+
+.showConnect{
+    display: flex;
+    justify-content: center;
+    transform: translateX(-12px);
+    margin: 0px 0px 15px 0px;
+    background-color: red;
+}
+
+.showConnect button{
+    display: inline-flex;
+    padding: 10px 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 20px;
+background: #3596E3;
+}
+.showConnect button span{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 19.6px */
 }
 
 @media (min-width:1550px) {
@@ -81,15 +121,15 @@ gap: 65px;
 
 @media (max-width:1200px) {
     .sidbarWrap{
-      width: 300px;
+      width: 330px;
     }
 }
 
-@media (max-width:920px) {
+@media (max-width:970px) {
     .sidbarWrap{
         display: none;
-        width: 330px;
-      height: auto;
+        width: 100vw;
+      height: 100vh;
       overflow: hidden;
 }
 
@@ -100,16 +140,17 @@ gap: 65px;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
 position: absolute;
+min-height: 100vh;
 height: 100%;
 z-index: 100;
 }
 
 @keyframes showSidebar {
     0%{
-        transform: translateX(-100px);
+        transform: translateX(-100vw);
     }
     100%{
-        transform: translateX(0px);
+        transform: translateX(0vw);
     }
 }
 

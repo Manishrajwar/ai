@@ -1,0 +1,122 @@
+.connectWrap{
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.conContain{
+    display: flex;
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+
+.connRight{
+    width: calc(100vw - 23.5%);
+padding: 20px 0px 20px 220px;
+
+}
+.connContent{
+    display: flex;
+    flex-direction: column;
+}
+
+.connContent .title{
+    display: flex;
+width: 604px;
+height: 113px;
+flex-direction: column;
+justify-content: center;
+}
+
+
+.connContent .title p{
+    color: #333;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; 
+}
+.connContent .connsubpara{
+    width: 604px;
+    height: 60px;
+}
+
+.connContent .connsubpara p{
+    color: #333;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; 
+}
+
+.connContent .connectBtn{
+    display: flex;
+    width: 604px;
+    padding: 13px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.connContent .connectBtn button{
+    display: flex;
+    padding: 10px 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 20px;
+background: #3596E3;
+}
+.connContent .connectBtn button span{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; 
+}
+
+
+
+
+@media (max-width:1200px) {
+    .connRight{
+        width: calc(100vw - 300px);
+         padding: 20px 0px 20px 10px;
+         display: flex;
+         justify-content: center;
+    }
+}
+@media (max-width:970px) {
+    .connRight{
+        width: 100%;
+        display: flex;
+        padding: 20px 0px 20px 0px;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width:620px) {
+    .connContent .title{
+        width: 98%;
+    }
+    .connContent{
+        width: 99%;
+    }
+
+    .connContent .connsubpara{
+        width: 98%;
+    }
+
+    .connContent .connectBtn{
+        width: 98%;
+    }
+}

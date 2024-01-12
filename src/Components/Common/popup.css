@@ -1,0 +1,109 @@
+.popupWrap{
+    min-height: 272px;
+    display: flex;
+width: 510px;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+height: fit-content;
+background: #FFF;
+margin-top: calc(177px - 69px);
+}
+
+.pupupNav{
+    background: #FFCF96;
+    height: 47px;
+    width: 100%;
+display: flex;
+justify-content: end;
+padding: 0px 11px 0px 0px;
+align-items: center;
+}
+
+.firstTextPop{
+    display: flex;
+padding: 10px 1.371px 0px 10px;
+justify-content: flex-end;
+align-items: center;
+border: 1px solid #000;
+}
+.firstTextPop textarea{
+    width: 436px;
+height: 53px;
+flex-shrink: 0;
+color: #333;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+outline: none;
+border: none;
+line-height: 140%; /* 19.6px */
+resize: none;
+}
+
+.popupSchedule{
+    display: flex;
+width: 460px;
+align-items: center;
+}
+
+.popupSchedule .schText{
+    color: #333;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 19.6px */
+}
+
+.re-schBtn{
+    display: flex;
+height: 75px;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+}
+.re-schBtn .ReGenebtn{
+    display: flex;
+    padding: 10px 35px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 20px;
+background: #CDFAD5;
+width: 167px;
+height: 40px;
+overflow: hidden;
+}
+.re-schBtn .scheduleBtn{
+    display: flex;
+    padding: 10px 35px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 20px;
+    height: 40px;
+background: #FF8080;
+width: 145px;
+}
+.re-schBtn .ReGenebtn span{
+    color: #333;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 19.6px */
+}
+.re-schBtn .scheduleBtn span{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 19.6px */
+}

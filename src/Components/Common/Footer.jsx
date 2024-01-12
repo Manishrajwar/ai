@@ -31,9 +31,11 @@ function Footer(){
                 {/* fourth  */}
                 <div className="third ">
                     <h2>ABOUT</h2>
+                     <div className="conWrap">
 
                     <p>Terms & Conditions</p>
                     <p>Privacy Policy</p>
+                     </div>
                 </div>
 
                 </div>

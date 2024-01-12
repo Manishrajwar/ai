@@ -5,7 +5,7 @@ export const sideBarItems = [
     },
     {
         title:"TOPICS" , 
-        path:"/topics"
+        path:"/topic"
     },
     {
         title:"GENERATE" , 
@@ -17,7 +17,7 @@ export const sideBarItems = [
     },
     {
         title:"SCHEDULED" , 
-        path:"/scheduled"
+        path:"/schedulePost"
     },
 
 ]
